@@ -88,104 +88,10 @@ stringdist(string3,string10,method='lv')
 stringdist(string10,string3,method='lv')
 
 swadesh3 <- NULL
-swadesh3$English = c("English","i", "you", "he","we", 
-                     "you", "they", "this", "that", "here", "there", 
-                     "who", "what", "where", "when", "how", "not", 
-                     "all", "many", "some", "few", "other", "one", 
-                     "two", "three", "four", "five", "big", "long", 
-                     "wide", "thick", "heavy", "small", "short", "narrow", 
-                     "thin", "woman", "man", "man", "child", "wife", 
-                     "husband", "mother", "father", "animal", "fish", 
-                     "bird", "dog", "louse", "snake", "worm", "tree", 
-                     "forest", "stick", "fruit", "seed", "leaf", "root", 
-                     "bark", "flower", "grass", "rope", "skin", "meat", 
-                     "blood", "bone", "fat", "egg", "horn", "tail", 
-                     "feather", "hair", "head", "ear", "eye", "nose", 
-                     "mouth", "tooth", "tongue", "fingernail", "foot", 
-                     "leg", "knee", "hand", "wing", "belly", "guts", 
-                     "neck", "back", "breast", "heart", "liver", "drink", 
-                     "eat", "bite", "suck", "spit", "vomit", 
-                     "blow", "breathe", "laugh", "see", "hear", 
-                     "know", "think", "smell", "fear", "sleep", 
-                     "live", "die", "kill", "fight", "hunt", 
-                     "hit", "cut", "split", "stab", "scratch", 
-                     "dig", "swim", "fly", "walk", "come", 
-                     "lie", "sit", "stand", 
-                     "turn", "fall", "give", "hold", 
-                     "squeeze", "rub", "wash", "wipe", "pull", 
-                     "push", "throw", "tie", "sew", "count", 
-                     "say", "sing", "play", "float", "flow", 
-                     "freeze", "swell", "sun", "moon", "star", 
-                     "water", "rain", "river", "lake", "sea", "salt", 
-                     "stone", "sand", "dust", "earth", "cloud", "fog", 
-                     "sky", "wind", "snow", "ice", "smoke", "fire", 
-                     "ash", "burn", "road", "mountain", "red", "green", 
-                     "yellow", "white", "black", "night", "day", "year", 
-                     "warm", "cold", "full", "new", "old", "good", 
-                     "bad", "rotten", "dirty", "straight", "round", 
-                     "sharp", "dull", "smooth", "wet", 
-                     "dry", "correct", "near", "far", "right", "left", 
-                     "at", "in", "with", "and", "if", "because", "name")
+swadesh3$English = c("English","i", "you", "he","we", "you", "they", "this", "that", "here", "there", "who", "what", "where", "when", "how", "not", "all", "many", "some", "few", "other", "one", "two", "three", "four", "five", "big", "long", "wide", "thick", "heavy", "small", "short", "narrow", "thin", "woman", "man", "man", "child", "wife", "husband", "mother", "father", "animal", "fish", "bird", "dog", "louse", "snake", "worm", "tree", "forest", "stick", "fruit", "seed", "leaf", "root", "bark", "flower", "grass", "rope", "skin", "meat", "blood", "bone", "fat", "egg", "horn", "tail", "feather", "hair", "head", "ear", "eye", "nose", "mouth", "tooth", "tongue", "fingernail", "foot", "leg", "knee", "hand", "wing", "belly", "guts", "neck", "back", "breast", "heart", "liver", "drink", "eat", "bite", "suck", "spit", "vomit", "blow", "breathe", "laugh", "see", "hear", "know", "think", "smell", "fear", "sleep", "live", "die", "kill", "fight", "hunt", "hit", "cut", "split", "stab", "scratch", "dig", "swim", "fly", "walk", "come", "lie", "sit", "stand", "turn", "fall", "give", "hold", "squeeze", "rub", "wash", "wipe", "pull", "push", "throw", "tie", "sew", "count", "say", "sing", "play", "float", "flow", "freeze", "swell", "sun", "moon", "star", "water", "rain", "river", "lake", "sea", "salt", "stone", "sand", "dust", "earth", "cloud", "fog", "sky", "wind", "snow", "ice", "smoke", "fire", "ash", "burn", "road", "mountain", "red", "green", "yellow", "white", "black", "night", "day", "year", "warm", "cold", "full", "new", "old", "good", "bad", "rotten", "dirty", "straight", "round", "sharp", "dull", "smooth", "wet", "dry", "correct", "near", "far", "right", "left", "at", "in", "with", "and", "if", "because", "name")
 
-swadesh3$French = c("French","je","tu","il","nous","vous","ils","ceci","cela",
-                    "ici","là","qui","quoi","où","quand","comment","ne pas","tout",
-                    "beaucoup","qualques","peu","autre","un","deux","trois","quatre",
-                    "cinq","grand","long","large","épais","lourd","petit","court",
-                    "étroit","mince","femme","homme","homme","enfant","femme",
-                    "mari","mère","père","animal","poisson","oiseau","chien",
-                    "pou","serpent","ver","arbre","forêt","bâton","fruit",
-                    "graine","feuille","racine","écorce","fleur","herbe","corde",
-                    "peau","viande","sang","os","graisse","œuf","corne","queue",
-                    "plume","cheveux","tête","oreille","œil","nez","bouche",
-                    "dent","langue","ongle","pied","jambe","genou","main","aile",
-                    "ventre","entrailles","cou","dos","sein","cœur","foie","boire",
-                    "manger","mordre","sucer","cracher","vomir","souffler",
-                    "respirer","rire","voir","entendre","savoir","penser",
-                    "sentir","craindre","dormir","vivre","mourir","tuer",
-                    "se battre","chasser","frapper","couper","fendre","poignarder",
-                    "gratter","creuser","nager","voler","marcher","venir",
-                    "s'étendre","s'asseoir","se lever","tourner","tomber","donner",
-                    "tenir","serrer","frotter","laver","essuyer","tirer","pousser",
-                    "jeter","lier","coudre","compter","dire","chanter","jouer",
-                    "flotter","couler","geler","gonfler","soleil","lune","étoile",
-                    "eau","pluie","rivière","lac","mer","sel","pierre","sable",
-                    "poussière","terre","nuage","brouillard","ciel","vent",
-                    "neige","glace","fumée","feu","cendre","brûler","route",
-                    "montagne","rouge","vert","jaune","blanc","noir","nuit",
-                    "jour","an","chaud","froid","plein","nouveau","vieux",
-                    "bon","mauvais","pourri","sale","droit","rond","tranchant",
-                    "émoussé","lisse","mouillé","sec","juste","près","loin",
-                    "droite","gauche","à","dans","avec","et","si","parce que",
-                    "nom")
-swadesh3$German = c("German","ich","du","er","wir","ihr","sie","dieser","der",
-                    "hier","da","wer","was","wo","wann","wie","nicht","alle",
-                    "viele","einige","wenig","anderer","eins","zwei","drei","vier",
-                    "fünf","groß","lang","breit","dick","schwer","klein","kurz",
-                    "eng","dünn","frau","mann","mensch","kind","frau","mann",
-                    "mutter","vater","tier","fisch","vogel","hund","laus","schlange",
-                    "wurm","baum","forst","stock","frucht","samen","blatt","wurzel","borke",
-                    "blume","gras","leine","haut","fleisch","blut","knochen","fett",
-                    "ei","horn","schwanz","feder","haar","haupt","ohr","auge",
-                    "nase","mund","zahn","zunge","fingernagel","fuß","bein",
-                    "knie","hand","fittich","bauch","eingeweide","hals",
-                    "rücken","brust","herz","leber","trinken","essen","beißen",
-                    "lutschen","speien","brechen","blasen","atmen","lachen","sehen",
-                    "hören","kennen","denken","riechen","fürchten","schlafen",
-                    "leben","sterben","töten","fechten","jagen","schlagen",
-                    "schneiden","spalten","stechen","kratzen","graben",
-                    "schwimmen","fliegen","gehen","kommen","liegen","sitzen",
-                    "stehen","drehen","fallen","geben","halten","quetschen",
-                    "reiben","waschen","wischen","ziehen","drücken","werfen",
-                    "binden","nähen","rechnen","sagen","singen","spielen",
-                    "schweben","fließen","frieren","schwellen","sonne","mond",
-                    "stern","wasser","regen","fluss","see","meer","salz",
-                    "stein","sand","staub","erde","wolke","nebel","himmel","wind",
-                    "schnee","eis","rauch","feuer","asche","breenen","straße",
-                    "berg","rot","grün","gelb","weiß","schwarz","nacht","tag",
-                    "jahr","warm","kalt","voll","neu","alt","gut","schlecht",
-                    "faul","schmutzig","gerade","rund","scharf","stumpf","glatt",
-                    "nass","dürr","richtig","nah","fern","rechst","links","an",
-                    "in","mit","und","ob","weil","name")
+swadesh3$French = c("French","je","tu","il","nous","vous","ils","ceci","cela","ici","là","qui","quoi","où","quand","comment","ne pas","tout", "beaucoup","qualques","peu","autre","un","deux","trois","quatre","cinq","grand","long","large","épais","lourd","petit","court","étroit","mince","femme","homme","homme","enfant","femme","mari","mère","père","animal","poisson","oiseau","chien","pou","serpent","ver","arbre","forêt","bâton","fruit","graine","feuille","racine","écorce","fleur","herbe","corde","peau","viande","sang","os","graisse","œuf","corne","queue","plume","cheveux","tête","oreille","œil","nez","bouche","dent","langue","ongle","pied","jambe","genou","main","aile","ventre","entrailles","cou","dos","sein","cœur","foie","boire","manger","mordre","sucer","cracher","vomir","souffler","respirer","rire","voir","entendre","savoir","penser","sentir","craindre","dormir","vivre","mourir","tuer","se battre","chasser","frapper","couper","fendre","poignarder","gratter","creuser","nager","voler","marcher","venir","s'étendre","s'asseoir","se lever","tourner","tomber","donner","tenir","serrer","frotter","laver","essuyer","tirer","pousser","jeter","lier","coudre","compter","dire","chanter","jouer","flotter","couler","geler","gonfler","soleil","lune","étoile","eau","pluie","rivière","lac","mer","sel","pierre","sable","poussière","terre","nuage","brouillard","ciel","vent","neige","glace","fumée","feu","cendre","brûler","route","montagne","rouge","vert","jaune","blanc","noir","nuit","jour","an","chaud","froid","plein","nouveau","vieux","bon","mauvais","pourri","sale","droit","rond","tranchant","émoussé","lisse","mouillé","sec","juste","près","loin","droite","gauche","à","dans","avec","et","si","parce que","nom")
+swadesh3$German = c("German","ich","du","er","wir","ihr","sie","dieser","der","hier","da","wer","was","wo","wann","wie","nicht","alle","viele","einige","wenig","anderer","eins","zwei","drei","vier","fünf","groß","lang","breit","dick","schwer","klein","kurz","eng","dünn","frau","mann","mensch","kind","frau","mann","mutter","vater","tier","fisch","vogel","hund","laus","schlange","wurm","baum","forst","stock","frucht","samen","blatt","wurzel","borke","blume","gras","leine","haut","fleisch","blut","knochen","fett","ei","horn","schwanz","feder","haar","haupt","ohr","auge","nase","mund","zahn","zunge","fingernagel","fuß","bein","knie","hand","fittich","bauch","eingeweide","hals","rücken","brust","herz","leber","trinken","essen","beißen","lutschen","speien","brechen","blasen","atmen","lachen","sehen","hören","kennen","denken","riechen","fürchten","schlafen","leben","sterben","töten","fechten","jagen","schlagen","schneiden","spalten","stechen","kratzen","graben","schwimmen","fliegen","gehen","kommen","liegen","sitzen","stehen","drehen","fallen","geben","halten","quetschen","reiben","waschen","wischen","ziehen","drücken","werfen","binden","nähen","rechnen","sagen","singen","spielen","schweben","fließen","frieren","schwellen","sonne","mond","stern","wasser","regen","fluss","see","meer","salz","stein","sand","staub","erde","wolke","nebel","himmel","wind","schnee","eis","rauch","feuer","asche","breenen","straße","berg","rot","grün","gelb","weiß","schwarz","nacht","tag","jahr","warm","kalt","voll","neu","alt","gut","schlecht","faul","schmutzig","gerade","rund","scharf","stumpf","glatt","nass","dürr","richtig","nah","fern","rechst","links","an","in","mit","und","ob","weil","name")
 #create the data frames
 langswad3 <- data.frame(swadesh3[1:3])
 langswad3$E1 <- substr(langswad3$English,1,1)
@@ -215,12 +121,12 @@ ls2sort <- ls2[order(ls2$rand),]
 ls1d <- matrix(0,nrow = nrow(ls1sort)/3,ncol = 3)
 ls2d <- matrix(0,nrow = nrow(ls2sort)/3,ncol = 3)
 n=1
-for(i in 1:(nrow(ls1sort)/3)){
-  ls1d[i,1] <- sum(ls1sort$EF[n:(n+2)])
-  ls1d[i,2] <- sum(ls1sort$EG[n:(n+2)])
-  ls1d[i,3] <- sum(ls1sort$FG[n:(n+2)])
-  n <- n+3
-}
+for(i in 1:(nrow(ls1sort)/3)){ 
+	ls1d[i,1] <- sum(ls1sort$EF[n:(n+2)]) 
+	ls1d[i,2] <- sum(ls1sort$EG[n:(n+2)]) 
+	ls1d[i,3] <- sum(ls1sort$FG[n:(n+2)]) 
+	n <- n+3 
+	}
 n=1
 for(i in 1:(nrow(ls2sort)/3)){
   ls2d[i,1] <- sum(ls2sort$EF[n:(n+2)])
@@ -354,6 +260,13 @@ for(i in 1:nrow(ls2df)){
 }
 colMeans(ls1df[,4:6])
 colMeans(ls2df[,4:6])
+#use this for sample variance if non-sticky
+max(diag(var(ls1df[,4:6])))
+max(diag(var(ls2df[,4:6])))
+sum(ls1df[,4]^2)/(nrow(ls1df)-1)
+sum(ls1df[,5]^2)/(nrow(ls1df)-1)
+sum(ls1df[,6]^2)/(nrow(ls1df)-1)
+
 #different 3 languages
 swadesh4 <- NULL
 swadesh4$Spanish = c("Spanish","yo", "tú", "él","nosotros", 
@@ -622,3 +535,214 @@ for(i in 1:nrow(ls4df)){
 }
 colMeans(ls3df[,4:6])
 colMeans(ls4df[,4:6])
+sum(ls3df[,4]^2)/(nrow(ls3df)-1)
+sum(ls3df[,5]^2)/(nrow(ls3df)-1)
+sum(ls3df[,6]^2)/(nrow(ls3df)-1)
+sum(ls4df[,4]^2)/(nrow(ls4df)-1)
+sum(ls4df[,5]^2)/(nrow(ls4df)-1)
+sum(ls4df[,6]^2)/(nrow(ls4df)-1)
+
+
+E1 <- c(0,3,3)
+F1 <- c(3,0,3)
+G1 <- c(3,3,0)
+L1 <- cbind(E1,F1,G1)
+L1d <- as.dist(L1)
+cL1d <- hclust(L1d,method="single")
+E2 <- c(0,3,1)
+F2 <- c(3,0,3)
+G2 <- c(1,3,0)
+L2 <- cbind(E2,F2,G2)
+L2d <- as.dist(L2)
+cL2d <- hclust(L2d,method="single")
+plot(as.dendrogram(cL1d))
+plot(as.dendrogram(cL2d))
+E3 <- c(0,2,1)
+F3 <- c(2,0,3)
+G3 <- c(1,3,0)
+L3 <- cbind(E3,F3,G3)
+L3d <- as.dist(L3)
+cL3d <- hclust(L3d,method="single")
+plot(as.dendrogram(cL3d))
+
+swadesh5 <- NULL
+swadesh5$Irish = c("Irish","mé","tú","sé","sinn","sibh","siad","seo","sin","anseo","ansin","cé","cad","cá","cathain","conas","ní","uile","a lán","roinnt","beagán","eile","aon","dó","trí","ceathair","cúig","mór","fada","leathan","tiubh","trom","beag","gearr","cúng","tanaí","bean","fear","duine","leanbh","bean chéile","fear céile","máthair","athair","ainmhi","iasc","éan","madra","míol cnis","nathair","péist","crann","coill","bata","toradh","síol","duilleog","fréamh","rúsc","bláth","féar","téad","craiceann","feoil","fuil","cnámh","saill","ubh","adharc","eireaball","cleite","gruaig","ceann","cluas","súil","srón","béal","fiacail","teanga","ionga","cos","cos","glúin","lámh","sciathán","bolg","inní","muineál","droim","cíoch","croí","ae","ól","ith","bain greim as","súigh","caith seile","aisig","séid","análaigh","déan gáire","feic","cluin","a fhios a bheith agat","smaoinigh","bolaigh","eagla a bheith ort","codail","mair","faigh bás","maraigh","troid","seilg","buail","gearr","scoilt","rop","tochais","tochail","snámh","eitil","siúil","tar","luigh","suigh","seas","cas","tit","tabhair","coinnigh","fáisc","cuimil","nigh","ciumil","tarraing","brúigh","caith","ceangail","fuaigh","áirigh","abair","can","imir","snámh","snigh","reoigh","at","grian","gealach","réalta","uisce","báisteach","abhainn","loch","muir","salann","cloch","gaineamh","deannach","cré","scamall","ceo","spéir","gaoth","sneachta","oighear","deatach","tine","luaith","dóigh","bóthar","sliabh","rua","glas","buí","bán","dubh","oíche","lá","bliain","te","fuar","lán","nua","sean","maith","olc","lofa","salach","díreach","cruinn","géar","maol","mín","fliuch","tirim","ceart","gar","i bhfad","deis","clé","ag","i","le","agus","má","mar","ainm")
+swadesh5$French = c("French","je","tu","il","nous","vous","ils","ceci","cela","ici","là","qui","quoi","où","quand","comment","ne pas","tout", "beaucoup","qualques","peu","autre","un","deux","trois","quatre","cinq","grand","long","large","épais","lourd","petit","court","étroit","mince","femme","homme","homme","enfant","femme","mari","mère","père","animal","poisson","oiseau","chien","pou","serpent","ver","arbre","forêt","bâton","fruit","graine","feuille","racine","écorce","fleur","herbe","corde","peau","viande","sang","os","graisse","œuf","corne","queue","plume","cheveux","tête","oreille","œil","nez","bouche","dent","langue","ongle","pied","jambe","genou","main","aile","ventre","entrailles","cou","dos","sein","cœur","foie","boire","manger","mordre","sucer","cracher","vomir","souffler","respirer","rire","voir","entendre","savoir","penser","sentir","craindre","dormir","vivre","mourir","tuer","se battre","chasser","frapper","couper","fendre","poignarder","gratter","creuser","nager","voler","marcher","venir","s'étendre","s'asseoir","se lever","tourner","tomber","donner","tenir","serrer","frotter","laver","essuyer","tirer","pousser","jeter","lier","coudre","compter","dire","chanter","jouer","flotter","couler","geler","gonfler","soleil","lune","étoile","eau","pluie","rivière","lac","mer","sel","pierre","sable","poussière","terre","nuage","brouillard","ciel","vent","neige","glace","fumée","feu","cendre","brûler","route","montagne","rouge","vert","jaune","blanc","noir","nuit","jour","an","chaud","froid","plein","nouveau","vieux","bon","mauvais","pourri","sale","droit","rond","tranchant","émoussé","lisse","mouillé","sec","juste","près","loin","droite","gauche","à","dans","avec","et","si","parce que","nom")
+swadesh5$German = c("German","ich","du","er","wir","ihr","sie","dieser","der","hier","da","wer","was","wo","wann","wie","nicht","alle","viele","einige","wenig","anderer","eins","zwei","drei","vier","fünf","groß","lang","breit","dick","schwer","klein","kurz","eng","dünn","frau","mann","mensch","kind","frau","mann","mutter","vater","tier","fisch","vogel","hund","laus","schlange","wurm","baum","forst","stock","frucht","samen","blatt","wurzel","borke","blume","gras","leine","haut","fleisch","blut","knochen","fett","ei","horn","schwanz","feder","haar","haupt","ohr","auge","nase","mund","zahn","zunge","fingernagel","fuß","bein","knie","hand","fittich","bauch","eingeweide","hals","rücken","brust","herz","leber","trinken","essen","beißen","lutschen","speien","brechen","blasen","atmen","lachen","sehen","hören","kennen","denken","riechen","fürchten","schlafen","leben","sterben","töten","fechten","jagen","schlagen","schneiden","spalten","stechen","kratzen","graben","schwimmen","fliegen","gehen","kommen","liegen","sitzen","stehen","drehen","fallen","geben","halten","quetschen","reiben","waschen","wischen","ziehen","drücken","werfen","binden","nähen","rechnen","sagen","singen","spielen","schweben","fließen","frieren","schwellen","sonne","mond","stern","wasser","regen","fluss","see","meer","salz","stein","sand","staub","erde","wolke","nebel","himmel","wind","schnee","eis","rauch","feuer","asche","breenen","straße","berg","rot","grün","gelb","weiß","schwarz","nacht","tag","jahr","warm","kalt","voll","neu","alt","gut","schlecht","faul","schmutzig","gerade","rund","scharf","stumpf","glatt","nass","dürr","richtig","nah","fern","rechst","links","an","in","mit","und","ob","weil","name")
+swadesh5$English = c("English","i", "you", "he","we", "you", "they", "this", "that", "here", "there", "who", "what", "where", "when", "how", "not", "all", "many", "some", "few", "other", "one", "two", "three", "four", "five", "big", "long", "wide", "thick", "heavy", "small", "short", "narrow", "thin", "woman", "man", "man", "child", "wife", "husband", "mother", "father", "animal", "fish", "bird", "dog", "louse", "snake", "worm", "tree", "forest", "stick", "fruit", "seed", "leaf", "root", "bark", "flower", "grass", "rope", "skin", "meat", "blood", "bone", "fat", "egg", "horn", "tail", "feather", "hair", "head", "ear", "eye", "nose", "mouth", "tooth", "tongue", "fingernail", "foot", "leg", "knee", "hand", "wing", "belly", "guts", "neck", "back", "breast", "heart", "liver", "drink", "eat", "bite", "suck", "spit", "vomit", "blow", "breathe", "laugh", "see", "hear", "know", "think", "smell", "fear", "sleep", "live", "die", "kill", "fight", "hunt", "hit", "cut", "split", "stab", "scratch", "dig", "swim", "fly", "walk", "come", "lie", "sit", "stand", "turn", "fall", "give", "hold", "squeeze", "rub", "wash", "wipe", "pull", "push", "throw", "tie", "sew", "count", "say", "sing", "play", "float", "flow", "freeze", "swell", "sun", "moon", "star", "water", "rain", "river", "lake", "sea", "salt", "stone", "sand", "dust", "earth", "cloud", "fog", "sky", "wind", "snow", "ice", "smoke", "fire", "ash", "burn", "road", "mountain", "red", "green", "yellow", "white", "black", "night", "day", "year", "warm", "cold", "full", "new", "old", "good", "bad", "rotten", "dirty", "straight", "round", "sharp", "dull", "smooth", "wet", "dry", "correct", "near", "far", "right", "left", "at", "in", "with", "and", "if", "because", "name")
+
+#create the data frames
+langswad5 <- data.frame(swadesh5[1:4])
+langswad5$I1 <- substr(langswad5$Irish,1,1)
+langswad5$F1 <- substr(langswad5$French,1,1)
+langswad5$G1 <- substr(langswad5$German,1,1)
+langswad5$E1 <- substr(langswad5$English,1,1)
+langswad5$IF[langswad5$I1==langswad5$F1] <- 0
+langswad5$IF[langswad5$I1!=langswad5$F1] <- 1
+langswad5$IG[langswad5$I1==langswad5$G1] <- 0
+langswad5$IG[langswad5$I1!=langswad5$G1] <- 1
+langswad5$FG[langswad5$F1==langswad5$G1] <- 0
+langswad5$FG[langswad5$F1!=langswad5$G1] <- 1
+langswad5 = langswad5[-1,]
+#randomize order of words
+set.seed(1107231) #date 11/1/23 tree 1
+langswad5$rand <- runif(nrow(langswad5),0,1)
+langswad5sort <-langswad5[order(langswad5$rand),]
+#split into 2 different populations
+ls5 <- langswad5sort[1:105,]
+ls6 <- langswad5sort[106:207,]
+#assign random numbers
+ls5$rand <- runif(nrow(ls5),0,1)
+ls6$rand <- runif(nrow(ls6),0,1)
+#sort smallest to largest
+ls5sort <- ls5[order(ls5$rand),]
+ls6sort <- ls6[order(ls6$rand),]
+#create samples of size 3 and sum the distances
+ls5d <- matrix(0,nrow = nrow(ls5sort)/3,ncol = 3)
+ls6d <- matrix(0,nrow = nrow(ls6sort)/3,ncol = 3)
+n=1
+for(i in 1:(nrow(ls5sort)/3)){ 
+  ls5d[i,1] <- sum(ls5sort$IF[n:(n+2)]) 
+  ls5d[i,2] <- sum(ls5sort$IG[n:(n+2)]) 
+  ls5d[i,3] <- sum(ls5sort$FG[n:(n+2)]) 
+  n <- n+3 
+}
+n=1
+for(i in 1:(nrow(ls6sort)/3)){
+  ls6d[i,1] <- sum(ls6sort$IF[n:(n+2)])
+  ls6d[i,2] <- sum(ls6sort$IG[n:(n+2)])
+  ls6d[i,3] <- sum(ls6sort$FG[n:(n+2)])
+  n <- n+3
+}
+ls5df <- data.frame(ls5d)
+colnames(ls5df) <- c("IF","IG","FG")
+ls6df <- data.frame(ls6d)
+colnames(ls6df) <- c("IF","IG","FG")
+ls5da <- matrix(0,nrow = nrow(ls5df),ncol = 3)
+ls6da <- matrix(0,nrow = nrow(ls6df),ncol = 3)
+ls5da <- data.frame(ls5da)
+colnames(ls5da) <- c("IFd","IGd","FGd")
+ls6da <- data.frame(ls6da)
+colnames(ls6da) <- c("IFd","IGd","FGd")
+ls5df <- cbind(ls5df,ls5da)
+ls6df <- cbind(ls6df,ls6da)
+#distances
+#origin then EF min, EG min, FG min, no unique min: EF=EG, EF=FG,EG=FG
+n=1
+for(i in 1:nrow(ls5df)){
+  set.seed(i)
+  r=runif(1)
+  if(var(c(ls5df[i,1],ls5df[i,2],ls5df[i,3]))==0){
+    ls5df[i,4] <- 0
+    ls5df[i,5] <- 0
+    ls5df[i,6] <- 0
+  }
+  else if((ls5df[i,1]==min(ls5df[i,1:3]))&(ls5df[i,1]<min(ls5df[i,2:3]))){
+    ls5df[i,4] <- min(ls5df[i,2:3])
+    ls5df[i,5] <- -min(ls5df[i,2:3])
+    ls5df[i,6] <- -min(ls5df[i,2:3])
+  }
+  else if((ls5df[i,2]==min(ls5df[i,1:3]))&(ls5df[i,2]<min(c(ls5df[i,1],ls5df[i,3])))){
+    ls5df[i,4] <- -min(c(ls5df[i,1],ls5df[i,3]))
+    ls5df[i,5] <- min(c(ls5df[i,1],ls5df[i,3]))
+    ls5df[i,6] <- -min(c(ls5df[i,1],ls5df[i,3]))
+  }
+  else if((ls5df[i,3]==min(ls5df[i,1:3]))&(ls5df[i,3]<min(ls5df[i,1:2]))){
+    ls5df[i,4] <- -min(ls5df[i,1:2])
+    ls5df[i,5] <- -min(ls5df[i,1:2])
+    ls5df[i,6] <- min(ls5df[i,1:2])
+  }
+  else if((ls5df[i,1]==min(ls5df[i,1:3]))&(ls5df[i,1]==ls5df[i,2])&r<0.5){
+    ls5df[i,4] <- -max(ls5df[i,1:3])
+    ls5df[i,5] <- max(ls5df[i,1:3])
+    ls5df[i,6] <- -max(ls5df[i,1:3])
+  }
+  else if((ls5df[i,1]==min(ls5df[i,1:3]))&(ls5df[i,1]==ls5df[i,2])&r>0.5){
+    ls5df[i,4] <- max(ls5df[i,1:3])
+    ls5df[i,5] <- -max(ls5df[i,1:3])
+    ls5df[i,6] <- -max(ls5df[i,1:3])
+  }
+  else if((ls5df[i,1]==min(ls5df[i,1:3]))&(ls5df[i,1]==ls5df[i,3])&r<0.5){
+    ls5df[i,4] <- max(ls5df[i,1:3])
+    ls5df[i,5] <- -max(ls5df[i,1:3])
+    ls5df[i,6] <- -max(ls5df[i,1:3])
+  }
+  else if((ls5df[i,1]==min(ls5df[i,1:3]))&(ls5df[i,1]==ls5df[i,3])&r>0.5){
+    ls5df[i,4] <- -max(ls5df[i,1:3])
+    ls5df[i,5] <- -max(ls5df[i,1:3])
+    ls5df[i,6] <- max(ls5df[i,1:3])
+  }
+  else if(r<0.5){
+    ls5df[i,4] <- -max(ls5df[i,1:3])
+    ls5df[i,5] <- max(ls5df[i,1:3])
+    ls5df[i,6] <- -max(ls5df[i,1:3])
+  }
+  else{
+    ls5df[i,4] <- -max(ls5df[i,1:3])
+    ls5df[i,5] <- -max(ls5df[i,1:3])
+    ls5df[i,6] <- max(ls5df[i,1:3])
+  }
+}
+
+for(i in 1:nrow(ls6df)){
+  set.seed(i)
+  r=runif(1)
+  if(var(c(ls6df[i,1],ls6df[i,2],ls6df[i,3]))==0){
+    ls6df[i,4] <- 0
+    ls6df[i,5] <- 0
+    ls6df[i,6] <- 0
+  }
+  else if((ls6df[i,1]==min(ls6df[i,1:3]))&(ls6df[i,1]<min(ls6df[i,2:3]))){
+    ls6df[i,4] <- min(ls6df[i,2:3])
+    ls6df[i,5] <- -min(ls6df[i,2:3])
+    ls6df[i,6] <- -min(ls6df[i,2:3])
+  }
+  else if((ls6df[i,2]==min(ls6df[i,1:3]))&(ls6df[i,2]<min(c(ls6df[i,1],ls6df[i,3])))){
+    ls6df[i,4] <- -min(c(ls6df[i,1],ls6df[i,3]))
+    ls6df[i,5] <- min(c(ls6df[i,1],ls6df[i,3]))
+    ls6df[i,6] <- -min(c(ls6df[i,1],ls6df[i,3]))
+  }
+  else if((ls6df[i,3]==min(ls6df[i,1:3]))&(ls6df[i,3]<min(ls6df[i,1:2]))){
+    ls6df[i,4] <- -min(ls6df[i,1:2])
+    ls6df[i,5] <- -min(ls6df[i,1:2])
+    ls6df[i,6] <- min(ls6df[i,1:2])
+  }
+  else if((ls6df[i,1]==min(ls6df[i,1:3]))&(ls6df[i,1]==ls6df[i,2])&r<0.5){
+    ls6df[i,4] <- -max(ls6df[i,1:3])
+    ls6df[i,5] <- max(ls6df[i,1:3])
+    ls6df[i,6] <- -max(ls6df[i,1:3])
+  }
+  else if((ls6df[i,1]==min(ls6df[i,1:3]))&(ls6df[i,1]==ls6df[i,2])&r>0.5){
+    ls6df[i,4] <- max(ls6df[i,1:3])
+    ls6df[i,5] <- -max(ls6df[i,1:3])
+    ls6df[i,6] <- -max(ls6df[i,1:3])
+  }
+  else if((ls6df[i,1]==min(ls6df[i,1:3]))&(ls6df[i,1]==ls6df[i,3])&r<0.5){
+    ls6df[i,4] <- max(ls6df[i,1:3])
+    ls6df[i,5] <- -max(ls6df[i,1:3])
+    ls6df[i,6] <- -max(ls6df[i,1:3])
+  }
+  else if((ls6df[i,1]==min(ls6df[i,1:3]))&(ls6df[i,1]==ls6df[i,3])&r>0.5){
+    ls6df[i,4] <- -max(ls6df[i,1:3])
+    ls6df[i,5] <- -max(ls6df[i,1:3])
+    ls6df[i,6] <- max(ls6df[i,1:3])
+  }
+  else if(r<0.5){
+    ls6df[i,4] <- -max(ls6df[i,1:3])
+    ls6df[i,5] <- max(ls6df[i,1:3])
+    ls6df[i,6] <- -max(ls6df[i,1:3])
+  }
+  else{
+    ls6df[i,4] <- -max(ls6df[i,1:3])
+    ls6df[i,5] <- -max(ls6df[i,1:3])
+    ls6df[i,6] <- max(ls6df[i,1:3])
+  }
+}
+colMeans(ls5df[,4:6])
+colMeans(ls6df[,4:6])
+sum(ls5df[,4]^2)/(nrow(ls5df)-1)
+sum(ls5df[,5]^2)/(nrow(ls5df)-1)
+sum(ls5df[,6]^2)/(nrow(ls5df)-1)
+sum(ls6df[,4]^2)/(nrow(ls6df)-1)
+sum(ls6df[,5]^2)/(nrow(ls6df)-1)
+sum(ls6df[,6]^2)/(nrow(ls6df)-1)
